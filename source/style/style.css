@@ -1,0 +1,627 @@
+:root{
+
+    /* Colores */
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+html{
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+   
+    
+}
+
+/* header*/
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width:32rem;
+    height: 33.4rem;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img{
+    width: 15.1rem;
+    height: 2.4rem;
+    margin-top: 3.9rem;
+}
+.header--title--container{
+    margin-top: 3.3rem;
+}
+.header--title--container h1{
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 7.8rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header--title--container p{
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 3.6rem;
+    margin-top: 2.4rem ;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+header a{
+    position: absolute;
+    top: 30.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22.9rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    background-color: var(--off-white);
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    text-decoration: none;
+}
+header .header__a--icon{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url('../assets/icon/mdi_keyboard_arrow_down.png');
+}
+
+/* main section1*/
+.main__section--one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 32rem;
+    height: 72rem;   
+    background-color: var(--just-white);
+}
+.exchange--container--div--scroll{
+    display: flex;
+}
+.main__section--one picture{
+    display: block;
+    width: 19.2rem;
+    height: 19.2rem;
+    background-image: url('../assets/img/Bitcoin.svg');
+    margin-bottom: 4.4rem;
+}
+.main__section--one article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 13rem;
+    text-align: center;
+}
+.section__article--paragraph :nth-child(1){
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 5.2rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+    margin-bottom: 2.4rem;
+
+}
+.section__article--paragraph :nth-child(2){
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 5.4rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: var(--grey);
+}
+.section__div--exchange{
+    width: 23.5rem;
+    height: 19.4rem;
+    display: flex;
+    flex-direction: column;
+}
+.section__div--exchange span{
+    display: inline-block;
+    width: 8.1rem;
+    height: 2.3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+    
+}
+.section__div--table{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width:19.7rem;
+    height:15.9rem;
+    margin-top: 1.2rem;
+}
+strong{
+    width: 7.7rem;
+    height: 1.9rem;
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: -2%;
+    color: #B5B0AC;
+
+}
+small{
+    width: 4.9rem;
+    height: 1.7rem;
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: -2%;
+    color:#757575;
+    margin-left: 1.2rem;
+}
+.table__i--arrow--down{
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 1.35rem;
+    background-image: url(../assets/icon/trending-down\ 1.png);
+
+}
+.table__i--arrow--up{
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 1.35rem;
+    background-image: url(../assets/icon/trending-up\ 1.png);
+}
+.table__i--arrow--mdi{
+    position: relative;
+    left: 22rem;
+    top: 6.5rem;
+    width: 0.8rem;
+    height: 2rem;
+    background-image: url(../assets/icon/arrow-right.png);
+    color: var(--warm-black);
+}
+.value__div--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 3.1rem;
+    margin-top: 1.6rem;
+    border: none;
+    background-color: var(--soft-orange);
+    border-radius: 0.4rem;
+}
+.value__div--container p{
+    width: 6rem;
+    height: 1.5rem;
+    font-family:"Inter",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: var(--warm-black);
+}
+.value__div--container span{
+    width: 4rem;
+    height: 1.5rem;
+    font-family:"Inter",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    color: var(--warm-black);
+}
+
+/* main section 2*/
+.main__section--two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-width: 32rem;
+    height: 91rem ;
+    background-color: var(--warm-black);
+}
+.section2__div--main--title{
+
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 11.2rem;
+    margin-top: 6.4rem;
+    text-align: center;
+    margin-bottom:3.2rem;  
+}
+.section2__div--main--title p:nth-child(1){
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 5.2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.section2__div--main--title p:nth-child(2){
+    width: 90vw;
+    min-width:  28.8rem;
+    height: 5.2rem;
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.section2__ul--container{
+    display: inline-block;
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 65.6rem;
+    list-style-type: none;
+}
+.section2__ul--container li{
+    display: inline-block;
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 15.2rem;
+    margin-bottom: 1.6rem;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.16);  
+}
+.section2__li--container p:nth-child(2){
+    width: 21.9rem;
+    height: 1.8rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    margin-left: 1.6rem;
+    margin-top: 1rem;
+}
+.section2__li--container p:nth-child(3){
+    width: 25.2rem;
+    height: 5.4rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: rgba(128, 128, 128, 1);
+    margin: 1rem 2rem 2.2rem 1.6rem;
+}
+.section2__li--container .section2__i--item1{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left:1.6rem;
+    margin-top:1.4rem;
+    background-image: url(../assets/icon/clock\ 1.png);
+}
+.section2__li--container .section2__i--item2{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left:1.6rem;
+    margin-top:1.4rem;
+    background-image: url(../assets/icon/eye\ 1.png);
+}
+.section2__li--container .section2__i--item3{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left:1.6rem;
+    margin-top:1.4rem;
+    background-image: url(../assets/icon/dollar-sign\ 1.png);
+}
+.section2__li--container .section2__i--item4{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left:1.6rem;
+    margin-top:1.4rem;
+    background-image: url(../assets/icon/check-circle\ 1.png);
+}
+
+/*Main Section three */
+
+.main__section--three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 32rem;
+    height: 38.7rem;
+}
+.main__section--three figure{
+    width: 100vw;
+    min-width: 32rem;
+    height: 38.7rem;
+    background-image: url(../assets/img/bitcoinbaby\ 1.svg);
+    background-size: cover;
+}
+.main__section--three p{
+    position: absolute;
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 2.6rem;
+    top: 196rem;
+    margin-top: 6.4rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    background-color: transparent;
+    text-align: center;
+}
+
+/*Main Section four */
+
+.Main__Section--four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    width: 100vw;
+    min-width: 32rem;
+    height: 49.1rem;
+}
+.div--container--price{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+    width: 32rem;
+    height: 27.8rem;
+}
+.div--price{
+    position: relative;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0 7.9rem;
+    width: 19rem;
+    height: 24.7rem;
+    background-color: var(--just-white);
+    box-shadow: 0px 10px 10px 0px rgba(89, 73, 30, 0.25);
+}
+.p--title-price{
+    
+   width: 28.8rem; 
+   height: 5.2rem;
+   margin-top:8.2rem;
+   margin-bottom:2.4rem;
+   font-weight: 700;
+   font-size: 2.4rem;
+   line-height: 2.6rem;
+   color: var(--warm-black);
+}
+.p--subtitle-price{
+    
+    width: 28.8rem; 
+    height: 3.6rem;
+    margin-bottom:1.9rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color:rgba(117, 117, 117, 1);
+}
+.p-recomendado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10.1rem;
+    height: 3.1rem;
+    font-family:"Inter",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+    text-decoration: none;
+    border-radius: 0.7rem;
+}
+.p--title-price--per--year{
+    width: 7.3rem;
+    height: 1.8rem;
+    margin-top: 3.1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:  rgba(0, 0, 0, 1);
+}
+.p--price{
+    width: 7.8rem;
+    height: 6.3rem;
+    margin-bottom:0.9rem;
+    font-family:"Inter",sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.2rem;
+    letter-spacing: -8%;
+}
+.p--price sup{
+    width: 0.8rem;
+    height: 1.5rem;
+    font-family:"Inter",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+.p--saving{
+    width: 15.8rem;
+    height: 3rem;
+    margin-bottom: 1.6rem;
+    font-family:"Inter",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: rgba(117, 117, 117, 1);
+}
+.select--plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15.1rem;
+    height: 4.8rem;
+    margin-bottom: 2.4rem;
+    border: 2px solid rgba(247, 147, 26, 1);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    border-radius: 0.4rem;
+}
+.select--plan i{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 0.8rem;
+    background-image: url(../assets/icon/arrow-right\ 1.png);
+}
+.arrow-section-four1{
+    position: relative;
+    bottom: 6rem;
+    left: 12rem;
+    display: inline-block;
+    width: 0.8rem;
+    height: 1.2rem;
+    background-image: url(../assets/icon/arrow-right.png);
+    color: var(--warm-black);
+}
+.arrow-section-four{
+    position: relative;
+    bottom: 4rem;
+    left: 12rem;
+    display: inline-block;
+    width: 0.8rem;
+    height: 1.2rem;
+    background-image: url(../assets/icon/arrow-right.png);
+    color: var(--warm-black);
+}
+.arrow-section-four-derecha{
+    position: relative;
+    right: 12.5rem;
+    bottom: 11.8rem;
+    display: inline-block;
+    width: 1.5rem;
+    height: 3rem;
+    background-image: url(../assets/icon/mdiderecha.png);
+    color: var(--warm-black);
+}
+
+
+/*Main Section five */
+
+.Main__Section--five{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100vw;
+    min-width: 32rem;
+    height: 36.8rem;
+}
+.p--frecuently--asked--title{
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    width: 90vw;
+    min-width: 28.8rem;
+    height: 5.2rem;
+    margin-top: 6.4rem;
+    margin-bottom:3.2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+.div__p--container--asked{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    min-width: 28rem;
+    height: auto;
+}
+.p--frecuently--asked{
+    width: 23.9rem;
+    height: auto;
+    margin-left: 1.6rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: rgba(117, 117, 117, 1);
+}
+.icon-arrow-asked{
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 1.7rem;
+    background-image: url(../assets/icon/mdi_keyboard_arrow_down.png);
+}
+
+/* footer */
+
+footer{
+    width: 100vw;
+    min-width: 32rem;
+    height: 15rem;
+}
+.content-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    min-width: 32rem;
+    height: 12rem;
+    background-color: var(--bitcoin-orange);
+}
+.a__content-footer{
+    width: auto;
+    height: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    text-decoration: none;
+
+}
+.content-footer ul{
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+}
+.content-footer picture{
+    margin-bottom: 1.5rem;
+}
